@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --poppins: 'Poppins', sans-serif;
+    --playfair: 'Playfair Display', serif;
+    --inter: 'Inter', sans-serif;
+}
