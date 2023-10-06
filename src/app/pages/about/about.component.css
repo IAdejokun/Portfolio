@@ -1,0 +1,19 @@
+h3{
+    font-family: var(--poppins);
+    font-family: 600;
+}
+
+.specials{
+    color: #8533C6;
+}
+
+
+div img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.midSection p{
+    font-family: var(--poppins);
+    font-weight: 300;
+}
