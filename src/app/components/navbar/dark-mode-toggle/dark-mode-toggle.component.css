@@ -1,0 +1,9 @@
+.toggle{
+   display: none; 
+}
+
+.sun,
+.moon {
+  transition: top 0.3s;
+  user-select: none;
+}

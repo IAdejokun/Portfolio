@@ -8,3 +8,23 @@
     --playfair: 'Playfair Display', serif;
     --inter: 'Inter', sans-serif;
 }
+
+.active{
+    font-weight: 600 !important;
+    color: #8533C6;  
+    transition: transform .8s ease-in-out;
+}
+
+body:not(.dark-mode-preloading) {
+    transition: all 0.3s linear;
+}
+
+body.light-mode{
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode{
+    background-color: black;
+    color: white;
+}

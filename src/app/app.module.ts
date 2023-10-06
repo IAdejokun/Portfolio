@@ -11,6 +11,7 @@ import { SkillsComponent } from './pages/skills/skills.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { DarkModeToggleComponent } from './components/navbar/dark-mode-toggle/dark-mode-toggle.component';
 
 
 
@@ -24,6 +25,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     ProjectsComponent,
     BlogComponent,
     ContactComponent,
+    DarkModeToggleComponent,
   ],
   imports: [
     BrowserModule,
