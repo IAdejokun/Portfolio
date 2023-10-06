@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import Typed from 'typed.js';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+
+ 
+
+  ngOnInit():void{
+    const options = {
+      strings:[ 'Frontend Developer.','Writer.', 'Design Enthusiast.'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      showCursor: true,
+      cursorChar: '|',
+      loop: true
+    }
+  
+   const typed = new Typed('#textTyped', options)
+  }
 
   downloadCV(){
     const filePath = "assets/ADEJOKUN_IBUKUNOLUWA_CV.pdf";
