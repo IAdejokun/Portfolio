@@ -12,7 +12,8 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DarkModeToggleComponent } from './components/navbar/dark-mode-toggle/dark-mode-toggle.component';
-
+import {LoadingBarRouterModule} from '@ngx-loading-bar/router';
+import {LoadingBarModule} from '@ngx-loading-bar/core'
 
 
 @NgModule({
@@ -31,6 +32,8 @@ import { DarkModeToggleComponent } from './components/navbar/dark-mode-toggle/da
     BrowserModule,
     AppRoutingModule,
     ToastrModule.forRoot(),
+    LoadingBarRouterModule,
+    LoadingBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
