@@ -1,0 +1,13 @@
+img{
+    width: 80px;
+}
+
+h3{
+    font-family: var(--inter);
+    font-weight: 600;
+}
+
+div p{
+    font-family: var(--inter);
+    font-weight: 500;
+}
