@@ -13,6 +13,7 @@ h4 a:hover{
 }
 
 p{
+    font-family: var(--poppins);
     font-weight: 200;
 }
 
