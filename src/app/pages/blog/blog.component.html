@@ -1,1 +1,27 @@
-<p>blog works!</p>
+<section class="container mx-auto">
+
+    <h3 class="text-5xl py-10 text-center sm:text-left">Blog Posts</h3>
+
+    <section class="flex justify-center">
+
+    <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 self-center">
+
+        <article class="shadow-lg w-80 rounded-md  md:w-full hover:scale-105" *ngFor="let art of articleResult">
+
+          <a href="{{art.url}}" target="_blank"> <img class="rounded-md" src="{{art.cover_image}}" alt="{{art.slug}}"></a>
+
+            <h4 class="text-lg p-2"><a href="{{art.url}}" target="_blank">{{art.title | titlecase}}</a></h4>
+
+            <p class="px-2"><a href="{{art.url}}" target="_blank">{{art.reading_time_minutes}} Minutes Read </a></p>
+
+            <p class="truncate p-2 w-[95%]"><a href="{{art.url}}" target="_blank">{{art.description}}</a></p>
+        </article>
+
+    </section>
+   
+</section>
+
+</section>
+
+
+

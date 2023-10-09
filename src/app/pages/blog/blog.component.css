@@ -1,0 +1,21 @@
+h3{
+    font-family: var(--inter);
+    font-weight: 600;
+}
+
+h4 a{
+    font-weight: 600;
+    transition: all ease-in-out .3s;
+}
+
+h4 a:hover{
+    color:#8533C6;
+}
+
+p{
+    font-weight: 200;
+}
+
+p a:hover{
+    color:#8533C6;
+}
