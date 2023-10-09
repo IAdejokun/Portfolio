@@ -1,0 +1,13 @@
+h3{
+    font-family: var(--mont);
+}
+
+section p{
+    font-family: var(--poppins);
+    font-weight: 400;
+}
+
+label{
+    font-family: var(--poppins);
+    font-weight: 400;
+}
