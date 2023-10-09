@@ -9,12 +9,6 @@ h1{
     filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.10));
 }
 
-main > div{
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between !important;
-}
 
 button{
     background-color:#8533C6;
@@ -28,4 +22,12 @@ button:hover{
 
 section a img:hover{
     transform: scale(1.1);
+}
+
+.gmail{
+    width: 50px;
+}
+
+.twitter{
+    width: 50px;
 }
