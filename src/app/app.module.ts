@@ -16,6 +16,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { DarkModeToggleComponent } from './components/navbar/dark-mode-toggle/dark-mode-toggle.component';
 import {LoadingBarRouterModule} from '@ngx-loading-bar/router';
 import {LoadingBarModule} from '@ngx-loading-bar/core'
+import {ReactiveFormsModule} from '@angular/forms'
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import {LoadingBarModule} from '@ngx-loading-bar/core'
     ToastrModule.forRoot(),
     LoadingBarRouterModule,
     LoadingBarModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
