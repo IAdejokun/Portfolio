@@ -7,7 +7,7 @@
 />
 
 <label class="toggleLabel" for="darkMode">
-    <i *ngIf="isBright" class="fa-solid fa-sun text-4xl text-yellow-400 moon"></i>
+    <i *ngIf="!isBright" class="fa-solid fa-sun text-4xl text-yellow-400 moon"></i>
 
-    <i *ngIf="!isBright" class="fa-solid fa-cloud-moon text-4xl sun"></i>
+    <i *ngIf="isBright" class="fa-solid fa-cloud-moon text-4xl sun"></i>
 </label>
