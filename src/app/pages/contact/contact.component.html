@@ -1,7 +1,7 @@
 <section class="container mx-auto">
    
 <section class="text-center">    
-<h3 class="text-4xl py-3">Have Any Enquiries?</h3>
+<h3 class="text-4xl py-3">Reach Out for Collab OR Enquiries?</h3>
 <p class="text-lg">Reach Out Via Email.</p>
 </section>
 
@@ -128,9 +128,45 @@
     </div>
 
     <div>
-        <label for="phoneNumber">Phone number</label>
-        <input type="tel" id="phoneNumber" placeholder="+234" formControlName="phoneNumber" class="block w-full rounded py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-    </div>
+        <label for="subject"><span class="text-red-600">*</span>Subject</label>
+        <input type="text" id="subject" placeholder="Subject?" formControlName="subject" class="block w-full rounded py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+      
+        <div *ngIf="
+        contactFormData.get('subject')?.invalid &&
+        contactFormData.get('subject')?.touched
+        ">
+
+        <div class="mt-2 text-red-600 text-sm">
+            <!-- Add your validation message here -->
+            Subject is required!
+          </div>
+
+        </div>
+
+        <div *ngIf="
+            contactFormData.get('subject')?.errors?.['minlength']
+        ">
+
+        <div class="mt-2 text-red-600 text-sm">
+            <!-- Add your validation message here -->
+            Subject is too short (Minimum Length of 3 Characters).
+          </div>
+
+        </div>
+
+        <div *ngIf="
+        contactFormData.get('subject')?.valid
+        ">
+        
+        <div class="mt-2 text-green-600 text-sm">
+            <!-- Add your validation message here -->
+            ✅ Look's Good.
+          </div>
+
+        </div>
+
+
+      </div>
 
     </div>
 
