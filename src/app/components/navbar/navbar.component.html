@@ -3,7 +3,7 @@
 
 
     <div id="midNav" class="self-center">
-        <ul class="flex">
+        <ul class="hidden sm:flex">
         <li><a routerLink="home"  routerLinkActive="active">Home</a></li>
         <li><a routerLink="about" routerLinkActive="active">About</a></li>
         <li><a routerLink="skills" routerLinkActive="active">Skills</a></li>
@@ -13,8 +13,47 @@
     </ul>
     </div>
 
-    <div class="self-center">
+    <div class="self-center flex justify-between items-center">
         <app-dark-mode-toggle></app-dark-mode-toggle>
+
+        <div class="block sm:hidden">
+        <i class="fa-solid fa-bars text-xl mx-5" sidebarjsToggle></i>
+       </div>
+        
     </div>
    
 </nav>
+
+
+<sidebarjs-element (open)="onOpen()" (close)="onClose()" (changeVisibility)="onChangeVisibility($event)">
+    <div class="text-black">
+        <div class="p-5">
+            <a href="" class="hover:text-[#8533C6] text-4xl mt-6">I.B.K</a>
+        </div>
+        
+        <div class="p-5">
+           <a href="">Home</a> 
+        </div>
+         
+        <div class="p-5">
+            <a href="about">About</a> 
+        </div>
+
+        <div class="p-5">
+            <a href="skills">Skills</a>
+        </div>
+
+        <div class="p-5">
+            <a href="projects">Projects</a>
+        </div>
+
+        <div class="p-5">
+            <a href="blog">Blog</a>
+        </div>
+
+        <div class="p-5">
+            <a href="contact">Contact</a>
+        </div>
+
+    </div>
+  </sidebarjs-element>

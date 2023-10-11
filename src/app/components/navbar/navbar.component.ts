@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import { SidebarjsService } from "ng-sidebarjs";
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+ 
+ constructor( private sideBarService:SidebarjsService ){
+  console.log(this.sideBarService);
+ }
 
+  onOpen(){
+  console.log('open');
+  
+ }
+
+ onClose(){
+  console.log('close');
+  }
+
+  onChangeVisibility(event:any){
+    console.log('changeVisibility', event);
+  }
 }
