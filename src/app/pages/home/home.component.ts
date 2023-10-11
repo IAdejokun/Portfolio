@@ -12,7 +12,7 @@ export class HomeComponent {
 
   ngOnInit():void{
     const options = {
-      strings:[ 'Frontend Developer.','Writer.', 'Design Enthusiast.'],
+      strings:[ 'Frontend Developer.','Technical Writer.', 'Designer.'],
       typeSpeed: 100,
       backSpeed: 100,
       showCursor: true,
