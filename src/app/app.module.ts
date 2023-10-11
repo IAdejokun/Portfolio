@@ -17,6 +17,8 @@ import { DarkModeToggleComponent } from './components/navbar/dark-mode-toggle/da
 import {LoadingBarRouterModule} from '@ngx-loading-bar/router';
 import {LoadingBarModule} from '@ngx-loading-bar/core'
 import {ReactiveFormsModule} from '@angular/forms'
+import { SidebarjsModule } from 'ng-sidebarjs';
+
 
 
 @NgModule({
@@ -39,7 +41,8 @@ import {ReactiveFormsModule} from '@angular/forms'
     LoadingBarRouterModule,
     LoadingBarModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SidebarjsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
