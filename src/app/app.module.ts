@@ -18,6 +18,7 @@ import {LoadingBarRouterModule} from '@ngx-loading-bar/router';
 import {LoadingBarModule} from '@ngx-loading-bar/core'
 import {ReactiveFormsModule} from '@angular/forms'
 import { SidebarjsModule } from 'ng-sidebarjs';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 
 
@@ -32,6 +33,7 @@ import { SidebarjsModule } from 'ng-sidebarjs';
     BlogComponent,
     ContactComponent,
     DarkModeToggleComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
