@@ -20,12 +20,12 @@ body:not(.dark-mode-preloading) {
     transition: all 0.3s linear;
 }
 
-body.dark-mode{
+body.light-mode{
     background-color: white;
     color: black;
 }
 
-body.light-mode{
+body.dark-mode{
     background-color: black;
     color: white;
 }
